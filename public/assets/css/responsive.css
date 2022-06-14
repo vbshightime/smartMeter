@@ -1,0 +1,423 @@
+@media (max-width:  1600px){
+	div.dataTables_wrapper div.dataTables_filter input {
+	    border: 1px solid #bebdbd;
+	    padding: 9px;
+	    font-size: 16px;
+	    border-radius: 10px;
+	    padding-left: 50px;
+	}
+	.field_inside .form-group label{
+		font-size: 16px;
+		    margin-bottom: 5px;
+	}
+	#example_filter .form-control{
+		background-position: 1px 6px !important;
+    	background-size: 44px 28px;
+	}
+	div.dataTables_wrapper div.dataTables_filter input{    padding-left: 43px;}
+	.nav-pills .nav-link, .nav-pills .nav-link.active{padding: 8px 0 8px 100px;}
+	header{
+		    padding: 30px 0 30px;
+	}
+	.field_inside .form-group input{padding: 8px;
+	    border-radius: 7px;
+	}
+	.field_inside .form-group {
+	    margin-bottom: 23px;
+	}
+	.nav-pills .nav-link {
+	    font-size: 16px !important;
+	}
+	.tab_title h2{font-size: 22px;}	
+	.nav-pills .nav-link svg{width: 25px;}
+	.custom_btn{
+		padding: 10px 18px;
+	    font-size: 16px;	
+	    width: 133px;
+	}
+	.table_main{padding: 30px 0;}
+	.table > :not(:last-child) > :last-child > *{font-size: 18px;}
+	table.dataTable tbody th, table.dataTable tbody td{font-size: 15px;}
+	table.dataTable tbody td span img{width:  35px;}
+	.invoices {
+	    padding: 50px 20px 40px 0px;
+	}	
+	.emp_name p{font-size: 18px;}
+	.emp_name img{width: 30px;}
+	.profile_picture img {
+	    width: 60px;
+	    height: 60px;
+	}
+	.invoicetab .field_inside{padding: 30px;}
+	.display_data h2{font-size: 20px;}
+	.header_inside h1{font-size: 27px;}
+}
+
+@media (max-width:  1440px){
+	.field_inside {
+	    padding: 80px 40px 60px 30px;
+	}
+	.upload_photo{margin-right: 0;}
+	.doc_desc {
+    max-width: 88%;
+    margin-bottom: 40px;
+}
+.nav-pills .nav-link.active, .nav-pills .nav-link{
+	padding: 11px 0 11px 60px !important;
+}
+.field_inside .form-group input{
+	    padding: 8px;
+    border-radius: 6px;
+}
+}
+@media (max-width: 1366px){
+	.dataTables_wrapper{
+	    width: 100%;
+	    overflow-x: scroll;
+	}
+}
+@media (max-width: 1280px){
+	.p-image a {
+	    font-size: 15px;
+	}
+	.f_pass{margin-top: 30px !important;margin-bottom: 5px !important;}
+	.field_inside .form-group label{font-size: 16px;}
+	.nav-pills .nav-link{font-size: 20px;}
+	table.dataTable thead th:first-child, table.dataTable tbody td:first-child{
+		    padding: 18px 10px 18px 15px !important;
+	}
+	table.dataTable tbody td span{
+		    width: 290px;
+	}
+	.header_inside{
+		padding: 0 30px;
+	}
+	.profile-pic {
+	    width: 240px;
+	    height: 220px;
+	}
+	.upload_photo{
+		padding: 80px 30px 50px 20px;
+	}
+	.p-image a{
+		font-size: 20px;
+	}
+	.field_inside {
+	    padding: 80px 60px 60px 30px;
+	}
+	.field_inside .form-group input{
+		width: 95%;
+	}
+}
+@media (max-width: 1199px){
+	.p-image a {
+	    font-size: 15px;
+	}
+	.upload_photo {
+	    padding: 50px 30px 50px 20px;
+	}
+	.field_inside {
+	    padding: 50px 30px 20px 30px;
+	}
+	.login-page .form-section .btn-theme span{font-size: 20px;}
+	.nav-pills .nav-link svg{margin-right: 6px;}
+	.nav-pills .nav-link.active,.nav-pills .nav-link{padding-left: 15px !important;}
+	
+	div.dataTables_wrapper div.dataTables_filter{padding-left: 10px;}
+	.login-page .form-section .btn-theme{margin-bottom: 0;}
+	.header_inside {
+	    padding: 0 15px;
+	}
+}
+@media (max-width: 1024px){
+	.profile-pic {
+	    width: 220px;
+	    height: 200px;
+	}
+	.field_inside {
+	    padding: 50px 15px 20px 30px;
+	}
+	.form-group label{font-size: 16px;}
+	.emp_name img{
+		width: 30px;
+	}
+	.header_inside h1{font-size: 30px;}
+	.emp_name p{font-size: 25px;}
+	.p-image a {
+	    font-size: 16px;
+	    padding: 12px 25px;
+	}
+	.invoices {
+	    padding: 40px 30px 40px 10px;
+	}
+	.nav.flex-column{padding-top: 40px;}
+	.table_main{
+		padding: 30px 0;
+	}
+	.header_inside h1 {
+	    font-size: 25px;
+	}
+	.emp_name p {
+	    font-size: 19px;
+	}
+}
+@media (max-width: 991px){
+
+	.upload_photo {
+	    padding: 40px 30px 10px 20px;
+	}
+	.field_inside {
+	    padding: 40px 15px 10px 15px;
+	}
+	.invoices {
+    padding: 40px 10px 40px 10px;
+}
+	.login-page .form-section{
+		    padding: 30px 30px;
+	}
+	.ps-0{padding-left: 15px !important;}
+	.nav.flex-column{border-right: 0;flex-direction: row !important;justify-content: center;height: auto ;}
+	.field_inside .form-group input{width: 100%;}
+	.nav-pills .nav-link.active, .nav-pills .nav-link {
+	    font-size: 16px !important;
+	    padding: 5px 10px !important;
+	}
+	.nav-pills .nav-link.active{border-right: none !important;border-bottom: 5px solid #2A4599;}
+	.nav-pills .nav-link{border-right: none !important;border-bottom: 5px solid transparent;}
+}
+@media (max-width: 800px){
+.header_inside{text-align: center;display: block;}
+.emp_name {justify-content: center;}
+.header_inside h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.emp_name img {
+    width: 30px;
+}
+header {
+    padding: 20px 0 20px;
+}
+.pagination_custom{justify-content: center;}
+.other_pages{margin-right: 0;}
+.nav-tabs{justify-content: center;}
+.field_inside .form-group {
+    margin-bottom: 25px;
+}
+.field_inside {
+    padding: 30px 10px 30px 30px;
+}
+.upload_photo {
+    padding: 50px 30px 50px 30px;
+}
+.field_inside {
+    padding: 30px 30px 30px 30px;
+}
+.notes p{max-width: 100%;}
+}
+@media (max-width: 767px){
+	.doc_desc p, .datadoctable .table tr td{font-size: 15px;}
+
+	.login-page .form-section h3{
+		    margin: 0 0 20px;
+    	font-size: 23px;
+	}
+	.invoicetab .field_inside{
+		padding: 30px;
+	}
+	.doc_desc {
+	    max-width: 88%;
+	        margin-bottom: 20px !important;
+	}
+	.doc_desc, .doc_desc p a, .doc_desc.center p, .doc_desc p{max-width: 100%;text-align: left !important;}
+	.datadoctable .table > :not(:last-child) > :last-child > *{
+		color: #616161;
+    	font-size: 16px;
+	}
+	.displayed_image{padding: 30px;}
+}
+@media (max-width: 640px){
+	.inside_doc_title {
+	    margin-bottom: 30px;
+	    display: block;
+	    text-align: right;
+	}
+	.datadoctable .table tr td {
+	    padding: 10px 20px;
+	    color: #616161;
+	}
+	.invoices {
+	    padding: 30px 10px 30px 10px;
+	}
+	.nav-pills .nav-link {
+	    padding: 15px 0 15px 30px;
+	}
+}
+
+@media (max-width: 600px){
+	.field_inside .form-group label {
+	    font-size: 15px;
+	    margin-bottom: 2px;
+	}
+	
+	.custom_btn{
+		width: 130px;
+    	font-size: 15px;
+	}
+	div.dataTables_wrapper div.dataTables_filter input{    font-size: 15px;}
+	#example_filter .form-control{    background-size: 64px 33px;}
+	table.dataTable tbody th, table.dataTable tbody td{padding: 25px 10px;}
+	.nav-tabs .nav-link{font-size: 15px !important;}
+	.field_inside .form-group input{padding: 12px;}
+}
+@media (max-width: 576px){
+	.f_pass{display: block;text-align: center !important;}
+	.f_pass a{display: block;}
+	.f_pass a:first-child{margin-bottom: 10px;}
+	.nav-pills .nav-link svg{width: 25px;}
+	.nav-pills .nav-link.active{    padding: 15px 0 15px 30px;}
+	.table > :not(:last-child) > :last-child > *{font-size: 17px;}
+	table.dataTable tbody th, table.dataTable tbody td{font-size: 15px;}
+	.checkbox input{
+		vertical-align: middle;
+	}
+	.displayed_image{padding: 20px;}
+	.login-page{padding: 10px 0;}
+	.inside_doc_title p{font-size: 14px;}
+}
+@media (max-width: 480px){
+	nav-pills .nav-link svg{width: 22px;}
+	.nav-pills .nav-link.active, .nav-pills .nav-link {
+    font-size: 14px !important;
+    padding: 1px 10px !important;
+}
+	.header_inside h1 {
+	    font-size: 18px;
+	}
+	.emp_name img {
+    width: 30px;
+}
+.emp_name p {
+    font-size: 14px;
+}
+	.doc_title h2{    font-size: 25px !important;}
+	.doc_desc p, .datadoctable .table tr td {
+	    font-size: 13px;
+	}
+	.login-page .form-section {
+		    padding: 20px 20px;
+		}
+	.emp_name img {
+	    width: 30px;
+	    margin-right: 10px;
+	}
+	.nav.flex-column {
+	    padding-top: 20px;
+	}
+	header {
+	    padding: 15px 0 15px;
+	}
+
+	.tab_title{display: block;}
+	.tab_title h2{margin-bottom: 10px;}
+	.modal .modal-dialog{margin:  20px auto;}
+	.doc_btn a{
+		    font-size: 18px;
+		        padding: 11px 33px;
+		        margin-right: 0;
+		        margin-bottom: 20px;
+		        display: block;
+	}
+	.doc_btn a{font-size: 15px;}
+	.doc_btn{display: block !important;}
+	table.dataTable tbody td span img {
+	    margin-right: 9px;
+	    flex-shrink: 0;
+	    width: 35px;
+	}
+	.custom_btn {
+	    width: 135px;
+	    font-size: 17px;
+	    padding: 6px 18px;
+	}
+	.header_inside h1{margin-bottom: 10px;}
+}
+
+@media (max-width: 414px){
+
+	.emp_name img {
+    width: 30px;}
+   
+	.nav-pills .nav-link.active, .nav-pills .nav-link {
+	    font-size: 18px;
+	}
+	.pagination_custom{text-align: center;display: block;}
+	.text_inside, .other_pages{justify-content: center;}
+	.text_inside{margin-bottom: 10px;}
+	.nav-tabs .nav-link{    padding: 11px 30px !important;}
+	.counting{margin-right: 0;}
+	.invoicetab .field_inside {
+	    padding: 20px;
+	}
+	.upload_photo {
+	    padding: 20px 15px 15px 15px;
+	}
+	.profile-pic {
+	    width: 210px;
+	    height: 200px;
+	}
+	.field_inside {
+	    padding: 20px 10px 20px 10px;
+	}
+	.field_inside .form-group label {
+	    font-size: 16px;
+	    margin-bottom: 5px;
+	}
+	.field_inside .form-group input {
+	    padding: 8px;
+	}
+	.display_data .d-flex {padding: 15px 20px;}
+	.profile_picture img {
+    width: 50px;
+    height: 50px;}
+    .display_data h2{font-size: 20px;}
+    .doc_btn a{margin-bottom: 10px;}
+}
+@media (max-width:  375px){
+	.nav-pills .nav-link.active, .nav-pills .nav-link{width: 100%;text-align: center;}
+	.tab_title .d-flex{display: block !important;}
+	.custom_btn {
+	    width: 100%;
+	    margin-right: 0 !important;
+	    display: block;
+	    margin-bottom: 10px;
+	    font-size: 17px;
+	}
+	.table_main {
+	    padding: 16px 0;
+	}
+	div.dataTables_wrapper div.dataTables_filter input {
+	    font-size: 16px;
+	}
+	#example_filter .form-control {
+	    background-size: 58px 28px;
+	}
+	div.dataTables_wrapper div.dataTables_filter input{padding-left: 40px;}
+	.checkbox input {
+	    width: 15px;
+	    height: 15px;
+	}
+	.text_inside, .other_pages{font-size: 15px;}
+	.pagination_custom{margin-top: 10px;}
+	.arrows a i{font-size: 17px;}
+	.nav-tabs .nav-link {
+	    font-size: 15px !important;
+	    margin-right: 10px;
+	}
+	.inputs .tab-content {
+	    padding: 20px 0 0!important;
+	}
+	.table > :not(:last-child) > :last-child > * {
+	    font-size: 17px;
+	}
+}

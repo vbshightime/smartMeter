@@ -1,0 +1,153 @@
+header .header_logo {width: 150px;}
+.contact_header {
+    background-image: url(../images/topbg.png)
+}
+.form_box .form-group {
+    padding-bottom: 20px;
+}
+.form_box .form-group .label_text {font-size: 16px;padding-bottom: 5px}
+
+.contact_section .custom_btn {
+    background-image: linear-gradient(151.87deg, #ffba26, #ffaa00, #ffaa00, #ffba26);
+    background-size: 300% 100%;
+    transition: all .5s ease;
+    color: #000;
+}
+.contact_section .custom_btn:hover {
+    background-position: 100% 0;
+}
+.system_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.connected_system {
+    margin: 20px 25px 0 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 0px #00000050;
+    padding: 20px;
+    border-radius: 10px;
+}
+.system_wrapper .texts p {margin-bottom: 4px;font-size: 13px;color:#696969}
+.system_wrapper .syst_name {color: #fa0;font-weight: 600;font-size: 16px;margin-bottom: 0;}
+.system_wrapper img.cabel_icon {
+    width: 25px;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+.connected_system .conec_head {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #6a6a6a;
+    font-weight: 700;
+}
+.contact_section .nav.flex-column {
+    padding-top: 0;
+    margin: 30px 0;
+    height: auto;
+}
+.homes_production {
+    padding: 20px 25px 0 15px;
+}
+.homes_production img.production_img {
+    width: 100px;
+    height: 100px;
+    margin: 15px auto;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 0px #00000050;
+    padding: 10px;
+}
+.homes_production h5 {text-align: center;font-weight: 700;letter-spacing:1px}
+.custom_dropdown .dropdown-menu.show {
+    display: block;
+    transform: translate(-50% , 24%) !important;
+    left: 50% !important;
+    right: unset !important;
+}
+.custom_dropdown  .dropdown-item {font-weight: 700;}
+.custom_dropdown  .dropdown-toggle {
+    color: #000 !important;
+}
+.homes_production p.size_text {
+    font-weight: 500;
+    font-size: 16px;
+}
+.homes_production p.size_text .size_num {
+    font-weight: 700;
+}
+input#systemSize {
+    margin-left: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.system_size_wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.system_size_wrapper label {flex-shrink: 0;font-size: 16px;}
+.stored_energy {
+    margin: 20px 25px 0 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 0px #00000050;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.stored_energy .energy_wrapper {display: flex;align-items: center}
+.stored_energy .energy_wrapper:not(:last-child) {margin-bottom: 30px;}
+.stored_energy .energy_wrapper .ener_img {width: 60px;margin-right: 15px;}
+.stored_energy .energy_wrapper .energy_text h4{margin-bottom: 0;font-size: 25px;font-weight: 600;}
+.stored_energy .energy_wrapper .energy_text p{margin-bottom: 0;font-size: 14px;}
+
+.contact_section .accordion-body {    padding: 0rem 1.25rem 1rem;}
+.contact_section .accordion-header {padding: 12px;}
+.contact_section .table_wrapper  {width: 100%;overflow-x: auto;}
+/* media */
+@media screen and (max-width: 1280px) {
+    .connected_system .conec_head {font-size: 16px;}
+    .system_wrapper img.cabel_icon {width: 20px;}
+    .stored_energy .energy_wrapper .energy_text h4 {font-size: 22px;}
+    .stored_energy .energy_wrapper .ener_img {width: 50px;}
+    .stored_energy {padding: 15px;}
+}
+@media screen and (max-width: 991px) {
+    header .header_logo {
+        width: 130px;
+        display: block;
+        margin: auto auto 20px;
+    }
+    .stored_energy {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .stored_energy .energy_wrapper {
+        margin: 10px 5px !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .connected_system {
+        margin: 0;
+    }
+    .homes_production {
+        padding: 30px 20px 0;
+    }
+    .homes_production p.size_text {text-align: center}
+    .homes_production h5 {font-size: 18px;}
+    .custom_dropdown .dropdown-toggle {font-size: 14px;}
+    .custom_dropdown .dropdown-item {
+        font-size: 14px;
+        text-align: center;
+    }
+    .stored_energy  .energy_wrapper {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .stored_energy  .energy_wrapper {
+        width: 100%;
+    }
+}

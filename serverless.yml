@@ -1,0 +1,164 @@
+service: smart-meter
+plugins:
+  - serverless-offline  
+#  - serverless-step-functions
+  - serverless-pseudo-parameters
+  - serverless-domain-manager
+ 
+
+custom:
+  secrets: ${file(jwt_secret.json)}
+  stage: ${opt:stage, self:provider.stage}
+  allowedHeaders:
+    - Accept
+    - Content-Type
+    - Content-Length
+    - Authorization
+    - X-Amz-Date
+    - X-Api-Key
+    - X-Amz-Security-Token
+    - X-Amz-User-Agent
+  domains:
+    prod: api.racaan.com  
+  customDomain:
+    domainName: ${self:custom.domains.${self:custom.stage}}
+    basePath: 'v1'
+    stage: ${self:custom.stage}
+    certificateName: racaan.com
+    createRoute53Record: true
+
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: prod
+  region: us-west-1
+  memorySize: 128
+  timeout: 5
+  endpointType: regional
+  environment:
+    USER_TABLE: ${self:service}-${self:provider.name}-Users-${self:provider}
+    JWT_SECRET: ${self:custom.secrets.jwtSecret}
+    CLIENT_ID: "323835384B6579"
+    CLIENT_SECRET: "32383538536563726574"
+    CLIENT_KEY: "2858"
+    PASS_PHRASE: "vibhu@18992"
+  
+  iamRoleStatements:
+    - Effect: Allow
+      Action: 
+        - dynamodb:Query
+        - dynamodb:PutItem
+        - dynamodb:DeleteItem
+        - dynamodb:UpdateItem
+        - dynamodb:GetItem
+        - dynamodb:Scan
+      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:#{AWS::AccountId}:table/${self:provider.environment.USER_TABLE}"
+    
+    - Effect: Allow
+      Action: 
+        - dynamodb:Query
+        - dynamodb:PutItem
+        - dynamodb:DeleteItem
+        - dynamodb:UpdateItem
+        - dynamodb:GetItem
+        - dynamodb:Scan
+      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:#{AWS::AccountId}:table/${self:provider.environment.USER_TABLE}/index/*"
+    
+    
+    
+functions:
+  ping:
+    handler: get/ping.handler
+    description: GET ping
+    events:
+      - http:
+          path: ping
+          method: get
+          cors:
+            origin: '*'
+            headers: ${self:custom.allowedHeaders}
+  
+  login:
+    handler: auth/login.handler
+    description: POST/login          
+    events:
+      - http:
+          path: login
+          method: post
+          request:
+            schema:
+              application/json: ${file(request_validators/request_validator_login.json)}
+          cors:
+            origin: '*'
+            headers: ${self:custom.allowedHeaders}
+
+  register:
+    handler: auth/register.handler
+    description: POST/register          
+    events:
+      - http:
+          path: register
+          method: post
+          request:
+            schema:
+              application/json: ${file(request_validators/request_validator_register.json)}
+          cors:
+            origin: '*'
+            headers: ${self:custom.allowedHeaders}
+
+
+
+resources:
+  Resources:
+    UserTable:
+      Type: AWS::DynamoDB::Table
+      DeletionPolicy: Retain
+      Properties:
+        TableName: ${self:provider.environment.USER_TABLE}
+        AttributeDefinitions:  
+          - AttributeName: userName
+            AttributeType: S
+          - AttributeName: timestamp
+            AttributeType: N
+          - AttributeName: expires
+            AttributeType: N
+          - AttributeName: email_id
+            AttributeType: S  
+        KeySchema:
+          - AttributeName: userName
+            KeyType: HASH
+          - AttributeName: timestamp
+            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        LocalSecondaryIndexes:
+          - IndexName: lsi_user
+            KeySchema:
+              - AttributeName: userName
+                KeyType: HASH
+              - AttributeName: expires
+                KeyType: RANGE
+            Projection:
+              ProjectionType: ALL
+        GlobalSecondaryIndexes: 
+          - IndexName: email_id-index
+            KeySchema:
+              - AttributeName: email_id
+                KeyType: HASH
+              - AttributeName: timestamp
+                KeyType: RANGE
+            Projection:
+              ProjectionType: ALL
+            ProvisionedThroughput:
+              ReadCapacityUnits: 1
+              WriteCapacityUnits: 1
+
+  
+
+
+
+
