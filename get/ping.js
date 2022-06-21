@@ -25,7 +25,7 @@ function redirectCallback(error,result){
       }
   };
   }
-  else{
+  else{                                                                               
     //res.send(result);
     console.log("<\n>" + "send data result ------------- " + result);
     console.log("<\n>" + "send data result ------------- " + querystring.stringify(result.headers));
@@ -39,6 +39,6 @@ function redirectCallback(error,result){
           redirection: result.headers.location
       })
   };
-    //res.redirect(result.headers.location);
+    //                                                                                res.redirect(result.headers.location);
   }
 }

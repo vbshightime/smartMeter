@@ -1,7 +1,7 @@
 service: smart-meter
 plugins:
   - serverless-offline  
-#  - serverless-step-functions
+  - serverless-step-functions
   - serverless-pseudo-parameters
   - serverless-domain-manager
  
@@ -41,9 +41,9 @@ provider:
   environment:
     USER_TABLE: ${self:service}-${self:provider.name}-Users-${self:provider}
     JWT_SECRET: ${self:custom.secrets.jwtSecret}
-    CLIENT_ID: "323835384B6579"
-    CLIENT_SECRET: "32383538536563726574"
-    CLIENT_KEY: "2858"
+    CLIENT_ID: ""
+    CLIENT_SECRET: ""
+    CLIENT_KEY: ""
     PASS_PHRASE: "vibhu@18992"
   
   iamRoleStatements:
@@ -108,6 +108,43 @@ functions:
           cors:
             origin: '*'
             headers: ${self:custom.allowedHeaders}
+            
+  
+  clientLogin:
+    handler: auth/client_login.handler
+    decription: GET/client_login
+    events:
+      -http:
+        path: client_login
+        method: get
+        cors:
+          origin: '*'
+          headers: ${self:custom.allowedHeaders}
+
+  OAuthCallback:
+    handler: auth/OAuthCallback.handler
+    decription: GET/OAuthCallback
+    events:
+      -http:
+        path: OAuthCallback
+        method: get
+        cors:
+          origin: '*'
+          headers: ${self:custom.allowedHeaders}     
+
+
+  clientLogin:
+    handler: auth/client_login.handler
+    decription: GET/client_login
+    events:
+      -http:
+        path: client_login
+        method: get
+        cors:
+          origin: '*'
+          headers: ${self:custom.allowedHeaders}  
+
+  
 
 
 
