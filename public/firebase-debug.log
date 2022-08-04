@@ -1,0 +1,68 @@
+[debug] [2022-04-25T13:57:46.138Z] ----------------------------------------------------------------------
+[debug] [2022-04-25T13:57:46.140Z] Command:       /usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js /Users/caveman/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2022-04-25T13:57:46.140Z] CLI Version:   10.7.1
+[debug] [2022-04-25T13:57:46.140Z] Platform:      darwin
+[debug] [2022-04-25T13:57:46.141Z] Node Version:  v12.18.1
+[debug] [2022-04-25T13:57:46.142Z] Time:          Mon Apr 25 2022 06:57:46 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-04-25T13:57:46.142Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-25T13:57:46.210Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-25T13:57:46.211Z] > authorizing via signed-in user (hjaswal01@gmail.com)
+[debug] [2022-04-25T13:57:46.211Z] [iam] checking project racaan-4a57c for permissions ["firebase.projects.get"]
+[debug] [2022-04-25T13:57:46.213Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/racaan-4a57c:testIamPermissions [none]
+[debug] [2022-04-25T13:57:46.213Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/racaan-4a57c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-04-25T13:57:46.355Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/racaan-4a57c:testIamPermissions 200
+[debug] [2022-04-25T13:57:46.356Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/racaan-4a57c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-04-25T13:57:46.357Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c [none]
+[debug] [2022-04-25T13:57:46.554Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c 200
+[debug] [2022-04-25T13:57:46.554Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c {"projectId":"racaan-4a57c","projectNumber":"491785756631","displayName":"Racaan","name":"projects/racaan-4a57c","resources":{"hostingSite":"racaan-4a57c"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/caveman'...
+[info] 
+[debug] [2022-04-25T13:57:46.558Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/racaan-4a57c/sites 
+[debug] [2022-04-25T13:57:47.007Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/racaan-4a57c/sites 200
+[debug] [2022-04-25T13:57:47.008Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/racaan-4a57c/sites {"sites":[{"name":"projects/491785756631/sites/racaan-4a57c","defaultUrl":"https://racaan-4a57c.web.app","appId":"1:491785756631:web:c02e4ee432b0867f7cf592","type":"DEFAULT_SITE"}]}
+[debug] [2022-04-25T13:57:47.008Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c/webApps/1:491785756631:web:c02e4ee432b0867f7cf592/config [none]
+[debug] [2022-04-25T13:57:47.416Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c/webApps/1:491785756631:web:c02e4ee432b0867f7cf592/config 200
+[debug] [2022-04-25T13:57:47.417Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c/webApps/1:491785756631:web:c02e4ee432b0867f7cf592/config {"projectId":"racaan-4a57c","appId":"1:491785756631:web:c02e4ee432b0867f7cf592","storageBucket":"racaan-4a57c.appspot.com","apiKey":"AIzaSyC65rqdqhGRDQcW71PEWo5ixN7EMaaUOZk","authDomain":"racaan-4a57c.firebaseapp.com","messagingSenderId":"491785756631","measurementId":"G-24QE938Z45"}
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port... {"metadata":{"emulator":{"name":"hosting"},"message":"\u001b[33mhosting: \u001b[39mPort 5000 is not available. Trying another port..."}}
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port... {"metadata":{"emulator":{"name":"hosting"},"message":"\u001b[33mhosting: \u001b[39mPort 5000 is not available. Trying another port..."}}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5010 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5010\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2022:13:57:55 +0000] "GET / HTTP/1.1" 200 4606 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2022:13:57:55 +0000] \"GET / HTTP/1.1\" 200 4606 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2022:13:57:55 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2022:13:57:55 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2022:14:43:05 +0000] "GET / HTTP/1.1" 200 4606 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2022:14:43:05 +0000] \"GET / HTTP/1.1\" 200 4606 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2022:14:43:05 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2022:14:43:05 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2022:14:43:05 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://localhost:5010/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2022:14:43:05 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://localhost:5010/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[debug] [2022-04-25T14:44:54.200Z] ----------------------------------------------------------------------
+[debug] [2022-04-25T14:44:54.202Z] Command:       /usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js /Users/caveman/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2022-04-25T14:44:54.202Z] CLI Version:   10.7.1
+[debug] [2022-04-25T14:44:54.202Z] Platform:      darwin
+[debug] [2022-04-25T14:44:54.202Z] Node Version:  v12.18.1
+[debug] [2022-04-25T14:44:54.203Z] Time:          Mon Apr 25 2022 07:44:54 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-04-25T14:44:54.204Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-25T14:44:54.274Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-25T14:44:54.274Z] > authorizing via signed-in user (hjaswal01@gmail.com)
+[debug] [2022-04-25T14:44:54.274Z] [iam] checking project racaan-4a57c for permissions ["firebase.projects.get"]
+[debug] [2022-04-25T14:44:54.276Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/racaan-4a57c:testIamPermissions [none]
+[debug] [2022-04-25T14:44:54.276Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/racaan-4a57c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-04-25T14:44:54.423Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/racaan-4a57c:testIamPermissions 200
+[debug] [2022-04-25T14:44:54.423Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/racaan-4a57c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-04-25T14:44:54.424Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c [none]
+[debug] [2022-04-25T14:44:54.595Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c 200
+[debug] [2022-04-25T14:44:54.595Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c {"projectId":"racaan-4a57c","projectNumber":"491785756631","displayName":"Racaan","name":"projects/racaan-4a57c","resources":{"hostingSite":"racaan-4a57c"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/caveman'...
+[info] 
+[debug] [2022-04-25T14:44:54.599Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/racaan-4a57c/sites 
+[debug] [2022-04-25T14:44:55.116Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/racaan-4a57c/sites 200
+[debug] [2022-04-25T14:44:55.117Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/racaan-4a57c/sites {"sites":[{"name":"projects/491785756631/sites/racaan-4a57c","defaultUrl":"https://racaan-4a57c.web.app","appId":"1:491785756631:web:c02e4ee432b0867f7cf592","type":"DEFAULT_SITE"}]}
+[debug] [2022-04-25T14:44:55.118Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c/webApps/1:491785756631:web:c02e4ee432b0867f7cf592/config [none]
+[debug] [2022-04-25T14:44:55.691Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c/webApps/1:491785756631:web:c02e4ee432b0867f7cf592/config 200
+[debug] [2022-04-25T14:44:55.692Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/racaan-4a57c/webApps/1:491785756631:web:c02e4ee432b0867f7cf592/config {"projectId":"racaan-4a57c","appId":"1:491785756631:web:c02e4ee432b0867f7cf592","storageBucket":"racaan-4a57c.appspot.com","apiKey":"AIzaSyC65rqdqhGRDQcW71PEWo5ixN7EMaaUOZk","authDomain":"racaan-4a57c.firebaseapp.com","messagingSenderId":"491785756631","measurementId":"G-24QE938Z45"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2022:14:45:09 +0000] "GET / HTTP/1.1" 200 4606 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2022:14:45:09 +0000] \"GET / HTTP/1.1\" 200 4606 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2022:14:45:10 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2022:14:45:10 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2022:14:45:10 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2022:14:45:10 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}

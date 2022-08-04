@@ -112,7 +112,7 @@ functions:
   
   clientLogin:
     handler: auth/client_login.handler
-    decription: GET/client_login
+    description: GET/client_login
     events:
       -http:
         path: client_login
@@ -123,26 +123,26 @@ functions:
 
   OAuthCallback:
     handler: auth/OAuthCallback.handler
-    decription: GET/OAuthCallback
+    description: GET/OAuthCallback
     events:
       -http:
         path: OAuthCallback
         method: get
         cors:
           origin: '*'
-          headers: ${self:custom.allowedHeaders}     
+          headers: ${self:custom.allowedHeaders}
 
-
-  clientLogin:
-    handler: auth/client_login.handler
-    decription: GET/client_login
+  getAuthCode:
+    handler: auth/getAuthCode.handler
+    description: GET/getAuthCode
     events:
       -http:
-        path: client_login
+        path: OAuthCallback
         method: get
         cors:
           origin: '*'
-          headers: ${self:custom.allowedHeaders}  
+          headers: ${self:custom.allowedHeaders}          
+
 
   
 
